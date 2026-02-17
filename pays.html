@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-commun.css">
+    <title>Nos Pays Participants</title>
+  </head>
+  <body>
+
+    <h2 style="text-align:center;">Liste des Pays Participants</h2>
+    <table class="wikitable sortable jquery-tablesorter" style="text-align:center; max-width:700px; width:100%" id="listePays">
+      <thead>
+        <tr>
+          <th>Drapeau</th>
+          <th>Pays</th>
+          <th>Nombre d'athlètes</th>
+        </tr>
+      </thead>
+      <tbody>
+          
+      </tbody>
+    </table>
+    <script>
+      var pays = [
+        {drapeau: '', pays: "France", participants: "162"},
+        {drapeau: '', pays: "Italie", participants: "195"},
+        {drapeau: '', pays: "Etats-Unis", participants: "235"},
+        {drapeau: '', pays: "Japon", participants: "121"},
+        {drapeau: '', pays: "Suisse", participants: "175"},
+        {drapeau: '', pays: "Grande-Bretagne", participants: "55"},
+        {drapeau: '', pays: "Canada", participants: "211"},
+        ];
+      const tableBody = document.getElementById("listePays").getElementsByTagName("tbody")[0];
+      pays.forEach(country => {
+            const row = tableBody.insertRow(); // Crée nouvelle ligne
+            
+            const cellFlag = row.insertCell(0);
+            const cellName = row.insertCell(1);
+            const cellParticipants = row.insertCell(2);
+
+            cellFlag.textContent = country.drapeau;
+            cellName.textContent = country.pays;
+            cellParticipants.textContent = country.participants;
+        });
+    </script>
+  </body>
+</html>
