@@ -25,25 +25,27 @@
     </table>
     <script>
       var pays = [
-        {drapeau: '', pays: "France", participants: "162"},
-        {drapeau: '', pays: "Italie", participants: "195"},
-        {drapeau: '', pays: "Etats-Unis", participants: "235"},
-        {drapeau: '', pays: "Japon", participants: "121"},
-        {drapeau: '', pays: "Suisse", participants: "175"},
-        {drapeau: '', pays: "Grande-Bretagne", participants: "55"},
-        {drapeau: '', pays: "Canada", participants: "211"},
+        {drapeau: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg', pays: "France", participants: "162"},
+        {drapeau: 'https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg', pays: "Italie", participants: "195"},
+        {drapeau: 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg', pays: "Etats-Unis", participants: "235"},
+        {drapeau: 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg', pays: "Japon", participants: "121"},
+        {drapeau: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg', pays: "Suisse", participants: "175"},
+        {drapeau: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg', pays: "Grande-Bretagne", participants: "55"},
+        {drapeau: 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg', pays: "Canada", participants: "211"},
         ];
       const tableBody = document.getElementById("listePays").getElementsByTagName("tbody")[0];
       pays.forEach(country => {
-            const row = tableBody.insertRow(); // Crée nouvelle ligne
+        console.log(pays['drapeau'])
+           /* var row = tableBody.insertRow(); // Crée nouvelle ligne
+            const container = document.getElementById('image-container');
             
-            const cellFlag = row.insertCell(0);
-            const cellName = row.insertCell(1);
-            const cellParticipants = row.insertCell(2);
+            var cellFlag = row.insertCell(0);
+            var cellName = row.insertCell(1);
+            var cellParticipants = row.insertCell(2);
 
             cellFlag.textContent = country.drapeau;
             cellName.textContent = country.pays;
-            cellParticipants.textContent = country.participants;
+            cellParticipants.textContent = country.participants;*/
         });
     </script>
   </body>
