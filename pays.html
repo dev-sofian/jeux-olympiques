@@ -2,51 +2,84 @@
 <html lang="fr">
 
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles-commun.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Nos Pays Participants</title>
-  </head>
-  <body>
+</head>
+
+<body>
 
     <h2 style="text-align:center;">Liste des Pays Participants</h2>
     <table class="wikitable sortable jquery-tablesorter" style="text-align:center; max-width:700px; width:100%" id="listePays">
-      <thead>
-        <tr>
-          <th>Drapeau</th>
-          <th>Pays</th>
-          <th>Nombre d'athlètes</th>
-        </tr>
-      </thead>
-      <tbody>
-          
-      </tbody>
+        <thead>
+            <tr>
+                <th>Drapeau</th>
+                <th>Pays</th>
+                <th>Nombre d'athlètes</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
     </table>
+
     <script>
-      var pays = [
-        {drapeau: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg', pays: "France", participants: "162"},
-        {drapeau: 'https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg', pays: "Italie", participants: "195"},
-        {drapeau: 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg', pays: "Etats-Unis", participants: "235"},
-        {drapeau: 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg', pays: "Japon", participants: "121"},
-        {drapeau: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg', pays: "Suisse", participants: "175"},
-        {drapeau: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg', pays: "Grande-Bretagne", participants: "55"},
-        {drapeau: 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg', pays: "Canada", participants: "211"},
-        ];
-      const tableBody = document.getElementById("listePays").getElementsByTagName("tbody")[0];
-      pays.forEach(country => {
-        console.log(pays['drapeau'])
-           /* var row = tableBody.insertRow(); // Crée nouvelle ligne
+        var pays = [{
+            drapeau: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg',
+            pays: "France",
+            participants: "162"
+        }, {
+            drapeau: 'https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg',
+            pays: "Italie",
+            participants: "195"
+        }, {
+            drapeau: 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg',
+            pays: "Etats-Unis",
+            participants: "235"
+        }, {
+            drapeau: 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg',
+            pays: "Japon",
+            participants: "121"
+        }, {
+            drapeau: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg',
+            pays: "Suisse",
+            participants: "175"
+        }, {
+            drapeau: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg',
+            pays: "Grande-Bretagne",
+            participants: "55"
+        }, {
+            drapeau: 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg',
+            pays: "Canada",
+            participants: "211"
+        }, ];
+        var tableBody = document.getElementById("listePays").getElementsByTagName("tbody")[0];
+        // var imgcontainer = document.getElementById('image-container');
+
+        pays.forEach(country => {
+            console.log(pays['drapeau'])
+            var row = tableBody.insertRow(); // Crée nouvelle ligne
             const container = document.getElementById('image-container');
-            
+
             var cellFlag = row.insertCell(0);
             var cellName = row.insertCell(1);
             var cellParticipants = row.insertCell(2);
 
-            cellFlag.textContent = country.drapeau;
+            var img = document.createElement('img');
+            img.src = country.drapeau;
+            img.alt = country.pays;
+            cellFlag.appendChild(img);
             cellName.textContent = country.pays;
-            cellParticipants.textContent = country.participants;*/
+            cellParticipants.textContent = country.participants;
         });
+
+        /* for (var i = 0; i < pays.length; i++) {
+            imgsrc = pays[i]['drapeau']
+            imgcontainer.innerHTML += `<img src="${imgsrc}" alt="Screenshot1" class="Screenshot">`
+        } */
     </script>
-  </body>
+</body>
+
 </html>

@@ -1,3 +1,10 @@
-body{
-	background-color: ice-blue;
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Josefin Sans'), local('JosefinSans'), url(/fonts/josefin-sans.ttf) format('truetype');
+}
+
+body {
+    background-color: ice-blue;
 }
