@@ -2,9 +2,17 @@
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 400;
-    src: local('Josefin Sans'), local('JosefinSans'), url(/fonts/josefin-sans.ttf) format('truetype');
+    src: local('Josefin Sans'), local('JosefinSans'), url(./fonts/JosefinSans-Italic-VariableFont_wght.ttf) format('truetype');
 }
 
 body {
-    background-color: ice-blue;
+    background-color: #f0f0f0;
+    font-family: 'Josefin Sans';
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
