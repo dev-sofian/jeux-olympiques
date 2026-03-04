@@ -98,6 +98,56 @@ function afficherVilles() {
     });
 }
 
+function afficherChiffres() {
+    const grille = document.getElementById("chiffresGrille");
+    chiffres.forEach(c => {
+        const carte = document.createElement("div");
+        carte.className = "chiffre-carte";
+        carte.innerHTML = `
+            <span class="chiffre-icone">${c.icone}</span>
+            <span class="chiffre-valeur">${c.valeur}</span>
+            <span class="chiffre-desc">${c.desc}</span>
+        `;
+        grille.appendChild(carte);
+    });
+}
+
+function afficherCalendrier() {
+    const liste = document.getElementById("calendrierListe");
+    calendrier.forEach(e => {
+        const item = document.createElement("div");
+        item.className = "calendrier-item";
+        item.innerHTML = `
+            <div class="calendrier-date">${e.date}</div>
+            <div class="calendrier-info">
+                <strong>${e.titre}</strong>
+                <span>${e.lieu}</span>
+            </div>
+        `;
+        liste.appendChild(item);
+    });
+}
+
+function gererFormulaire() {
+    const bouton = document.getElementById("boutonEnvoyer");
+    bouton.addEventListener("click", function() {
+        const prenom = document.getElementById("prenom").value.trim();
+        const pays = document.getElementById("pays-favori").value;
+        if (!prenom || !pays) {
+            alert("Merci de remplir le prénom et le pays favori.");
+            return;
+        }
+        const conf = document.getElementById("confirmation");
+        conf.textContent = `✅ Merci ${prenom} ! Tu mises sur la ${pays} — bonne chance !`;
+        conf.style.display = "block";
+        bouton.disabled = true;
+        bouton.style.opacity = ".5";
+    });
+}
+
 afficherFlocons();
 afficherStats();
 afficherVilles();
+afficherChiffres();
+afficherCalendrier();
+gererFormulaire();
