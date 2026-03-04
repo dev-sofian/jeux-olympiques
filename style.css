@@ -1,0 +1,69 @@
+:root {
+    --bleu-nuit: #0B1F3A;
+    --bleu-glace: #4A90D9;
+    --blanc-neige: #F0F4F8;
+    --argent: #C8D6E0;
+    --or: #D4AF37;
+    --rouge-alpin: #C0392B;
+    --texte: #1a1a2e;
+    --carte: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--blanc-neige);
+    color: var(--texte);
+    min-height: 100vh;
+}
+
+.navbar {
+    background: var(--bleu-nuit);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--bleu-glace);
+}
+
+.navbar-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.navbar-logo span {
+    color: var(--or);
+}
+
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navbar-links a {
+    color: var(--argent);
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color .2s;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+    color: var(--or);
+}

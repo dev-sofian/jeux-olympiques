@@ -44,3 +44,60 @@ const chiffres = [
     { icone: "🗓️", valeur: "70 ans", desc: "Depuis les derniers JO à Cortina" },
     { icone: "🇮🇹", valeur: "1956", desc: "Dernière édition italienne" }
 ];
+
+const calendrier = [
+    { date: "6 Fév", titre: "Cérémonie d'ouverture", lieu: "Stade San Siro, Milan" },
+    { date: "7 Fév", titre: "Premières épreuves", lieu: "Ski alpin & Biathlon" },
+    { date: "8 Fév", titre: "Patinage artistique – Équipes", lieu: "Palais des sports, Milan" },
+    { date: "11 Fév", titre: "Descente hommes", lieu: "Cortina d'Ampezzo" },
+    { date: "14 Fév", titre: "Hockey sur glace – Phase de groupes", lieu: "Milan" },
+    { date: "18 Fév", titre: "Snowboard – Half-pipe", lieu: "Livigno" },
+    { date: "22 Fév", titre: "Cérémonie de clôture", lieu: "Milan" }
+];
+
+function creerFlocon() {
+    const flocon = document.createElement("div");
+    flocon.className = "flocon";
+    flocon.textContent = "❄";
+    flocon.style.left = Math.random() * 100 + "vw";
+    flocon.style.animationDuration = (Math.random() * 6 + 4) + "s";
+    flocon.style.animationDelay = (Math.random() * 5) + "s";
+    flocon.style.fontSize = (Math.random() * 1.2 + .6) + "rem";
+    return flocon;
+}
+
+function afficherFlocons() {
+    const conteneur = document.getElementById("flocons");
+    for (let i = 0; i < 22; i++) {
+        conteneur.appendChild(creerFlocon());
+    }
+}
+
+function afficherStats() {
+    stats.forEach(s => {
+        const el = document.getElementById(s.id);
+        el.innerHTML = `<span class="stat-chiffre">${s.chiffre}</span><span class="stat-label">${s.label}</span>`;
+    });
+}
+
+function afficherVilles() {
+    const grille = document.getElementById("villesGrille");
+    villes.forEach(v => {
+        const carte = document.createElement("div");
+        carte.className = "ville-carte";
+        const tagsHtml = v.tags.map(t => `<span class="ville-tag">${t}</span>`).join("");
+        carte.innerHTML = `
+            <div class="ville-emoji" style="background:${v.couleur}">${v.emoji}</div>
+            <div class="ville-corps">
+                <h3>${v.nom}</h3>
+                <p>${v.description}</p>
+                <div class="ville-tags">${tagsHtml}</div>
+            </div>
+        `;
+        grille.appendChild(carte);
+    });
+}
+
+afficherFlocons();
+afficherStats();
+afficherVilles();
