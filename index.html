@@ -1,13 +1,97 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles-index.css">
-    <title>page-d'accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JO Hiver 2026 – Milan-Cortina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <a href="pays.html">voir page pays</a>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-logo">Milano <span>2026</span></a>
+        <ul class="navbar-links">
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="pays.html">Pays</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-flocons" id="flocons"></div>
+        <div class="hero-contenu">
+            <p class="hero-surtitre">6 – 22 Février 2026</p>
+            <h1 class="hero-titre">Jeux Olympiques<br><span>d'Hiver</span></h1>
+            <p class="hero-sous-titre">Milan & Cortina d'Ampezzo, Italie</p>
+            <div class="hero-boutons">
+                <a href="sports.html" class="btn btn-or">Les Sports</a>
+                <a href="pays.html" class="btn btn-contour">Les Pays</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="stats-bandeau">
+        <div class="stat-item" id="stat-pays"></div>
+        <div class="stat-item" id="stat-athletes"></div>
+        <div class="stat-item" id="stat-sports"></div>
+        <div class="stat-item" id="stat-epreuves"></div>
+        <div class="stat-item" id="stat-jours"></div>
+    </div>
+
+    <div class="section-wrapper">
+        <div class="section-titre">Les Villes Hôtes</div>
+        <div class="villes-grille" id="villesGrille"></div>
+    </div>
+
+    <div class="section-wrapper">
+        <div class="section-titre">Chiffres Clés</div>
+        <div class="chiffres-grille" id="chiffresGrille"></div>
+    </div>
+
+    <div class="section-wrapper">
+        <div class="section-titre">Calendrier des épreuves</div>
+        <div class="calendrier-liste" id="calendrierListe"></div>
+    </div>
+
+    <section class="formulaire-section">
+        <div class="formulaire-inner">
+            <div class="section-titre" style="color:#fff; border-color: var(--or)">Votre pronostic</div>
+            <p class="formulaire-intro">Quel pays remportera le plus de médailles d'or selon vous ?</p>
+            <div class="champ-groupe">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" placeholder="Ex : Julie">
+            </div>
+            <div class="champ-groupe">
+                <label for="pays-favori">Pays favori</label>
+                <select id="pays-favori">
+                <option value="">— Choisir —</option>
+                <option>Norvège</option>
+                <option>Allemagne</option>
+                <option>Autriche</option>
+                <option>États-Unis</option>
+                <option>Canada</option>
+                <option>France</option>
+                <option>Suède</option>
+                <option>Italie</option>
+            </select>
+            </div>
+            <div class="champ-groupe">
+                <label for="raison">Pourquoi ?</label>
+                <textarea id="raison" placeholder="Votre argument…"></textarea>
+            </div>
+            <button class="btn btn-or" id="boutonEnvoyer">Envoyer</button>
+            <div class="confirmation" id="confirmation"></div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>Projet NSI · JO Hiver Milano-Cortina 2026 · Julie & Sofian</p>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
