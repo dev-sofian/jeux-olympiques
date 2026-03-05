@@ -67,3 +67,60 @@ body {
 .navbar-links a.active {
     color: var(--or);
 }
+
+.site-footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--bleu-nuit);
+    color: #556;
+    font-size: .85rem;
+    margin-top: 3rem;
+    border-top: 3px solid var(--bleu-glace);
+}
+
+.page-header {
+    color: #fff;
+    padding: 4.5rem 2.5rem 3.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient( -55deg, transparent, transparent 40px, rgba(255, 255, 255, .03) 40px, rgba(255, 255, 255, .03) 41px);
+}
+
+.page-header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+    letter-spacing: 4px;
+    position: relative;
+}
+
+.page-header p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, .75);
+    position: relative;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-wrapper {
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.section-titre {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    border-left: 6px solid var(--or);
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}

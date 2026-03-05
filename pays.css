@@ -74,3 +74,78 @@
     flex-wrap: wrap;
     margin-top: 2.5rem;
 }
+
+.wikitable {
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wikitable thead tr {
+    background: linear-gradient(135deg, var(--bleu-nuit), #2a4a6b);
+    color: white;
+}
+
+.wikitable thead th {
+    border-bottom: 2px solid var(--or);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.wikitable tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background-color 0.2s ease;
+}
+
+.wikitable tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.wikitable tbody tr:last-child {
+    border-bottom: none;
+}
+
+.wikitable thead tr {
+    height: 50px;
+}
+
+.wikitable tbody tr {
+    height: 70px;
+}
+
+.wikitable td {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+.cellule-drapeau {
+    width: 12%;
+}
+
+.cellule-drapeau img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.cellule-nom {
+    width: 25%;
+}
+
+.wikitable td:nth-child(3) {
+    width: 38%;
+}
+
+.wikitable td:nth-child(4) {
+    width: 25%;
+}
+
+.pays-liste {
+    padding: 1rem 1.2rem;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+}

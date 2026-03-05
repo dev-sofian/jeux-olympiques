@@ -6,10 +6,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> JO Hiver 2026 - Nos Pays Participants</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pays.css">
-    <title>Nos Pays Participants</title>
 </head>
 
 <body>
@@ -34,75 +35,30 @@
     </section>
     <br>
 
-    <h2 style="text-align:center;">Liste des Pays Participants</h2>
-    <table class="wikitable sortable jquery-tablesorter" style="text-align:center; max-width:700px; width:100%" id="listePays">
+    <div class="section-wrapper">
+        <div class="section-titre">Liste des Pays Participants</div>
+    </div>
+    <table class="wikitable sortable jquery-tablesorter" style="text-align:center; max-width:700px; width:100%" id="paysListe">
         <thead>
             <tr>
                 <th>Drapeau</th>
                 <th>Pays</th>
                 <th>Nombre d'athlètes</th>
+                <th>Médailles</th>
             </tr>
         </thead>
-        <tbody>
+
+
+        <tbody id="paysListe" class="pays-liste">
         </tbody>
     </table>
 
-    <script>
-        var pays = [{
-            drapeau: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg',
-            pays: "France",
-            participants: "162"
-        }, {
-            drapeau: 'https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg',
-            pays: "Italie",
-            participants: "195"
-        }, {
-            drapeau: 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg',
-            pays: "Etats-Unis",
-            participants: "235"
-        }, {
-            drapeau: 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg',
-            pays: "Japon",
-            participants: "121"
-        }, {
-            drapeau: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg',
-            pays: "Suisse",
-            participants: "175"
-        }, {
-            drapeau: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg',
-            pays: "Grande-Bretagne",
-            participants: "55"
-        }, {
-            drapeau: 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg',
-            pays: "Canada",
-            participants: "211"
-        }, ];
-        var tableBody = document.getElementById("listePays").getElementsByTagName("tbody")[0];
-        // var imgcontainer = document.getElementById('image-container');
+    <footer class="site-footer">
+        <p>Projet NSI · JO Hiver Milano-Cortina 2026 · Julie & Sofian</p>
+    </footer>
 
-        pays.forEach(country => {
-            console.log(pays['drapeau'])
-            var row = tableBody.insertRow(); // Crée nouvelle ligne
-            const container = document.getElementById('image-container');
-
-            var cellFlag = row.insertCell(0);
-            var cellName = row.insertCell(1);
-            var cellParticipants = row.insertCell(2);
-
-            var img = document.createElement('img');
-            img.src = country.drapeau;
-            img.alt = country.pays;
-            cellFlag.appendChild(img);
-            cellName.textContent = country.pays;
-            cellParticipants.textContent = country.participants;
-        });
-
-        /* for (var i = 0; i < pays.length; i++) {
-            imgsrc = pays[i]['drapeau']
-            imgcontainer.innerHTML += `<img src="${imgsrc}" alt="Screenshot1" class="Screenshot">`
-        } */
-    </script>
     <script src="index.js"></script>
+    <script src="pays.js"></script>
 </body>
 
 </html>
