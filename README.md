@@ -46,6 +46,17 @@ Ouvrir `index.html` dans un navigateur.
 |---|---|
 | index.html / index.css / index.js | Sofian |
 | sports.html / sports.css / sports.js | Julie |
-| pays.html / pays.css / pays.js | Julie |
-| style.css | Sofian |
+| pays.html / pays.css / pays.js | Julie et Sofian |
+| style.css | Julie et Sofian |
 | README.md | Sofian |
+
+## Avancement
+
+| Objectif | Pourcentage |
+|---|---|
+| Page d'acceuil | 90% |
+| Page des sports | 20% |
+| Page des pays | 35% |
+| Styles | 80% |
+| Flexbox | 20% |
+| JavaScript | 70% |
