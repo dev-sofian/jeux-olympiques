@@ -10,28 +10,28 @@ const villes = [{
         emoji: "🏙️",
         nom: "Milan",
         couleur: "#E8F4FD",
-        description: "Capitale économique d'Italie, Milan accueille les cérémonies d'ouverture et de clôture au stade San Siro, ainsi que les épreuves de patinage de vitesse et de hockey sur glace.",
+        description: "Milan accueille les cérémonies d'ouverture et de clôture au stade San Siro, ainsi que les épreuves de patinage de vitesse et de hockey sur glace.",
         tags: ["Cérémonie d'ouverture", "Patinage de vitesse", "Hockey sur glace", "Curling"]
     },
     {
         emoji: "⛷️",
         nom: "Cortina d'Ampezzo",
         couleur: "#E8F8F0",
-        description: "Perchée à 1 224 m d'altitude dans les Dolomites, Cortina est la capitale mondiale du ski. Elle avait déjà accueilli les JO en 1956 et revient sur le devant de la scène 70 ans plus tard.",
+        description: "Située à 1 224 m d'altitude, Cortina est la ville du ski. Elle avait déjà accueilli les JO en 1956 et revient 70 ans plus tard.",
         tags: ["Ski alpin", "Biathlon", "Bobsleigh", "Luge", "Skeleton"]
     },
     {
         emoji: "🏔️",
         nom: "Valtellina",
         couleur: "#FEF9E7",
-        description: "La vallée alpine de Valtellina, au nord de Milan, offre des pentes idéales pour le ski de fond et le biathlon dans un décor de montagne sauvage.",
+        description: "La vallée de Valtellina, au nord de Milan, offre des pentes idéales pour le ski de fond et le biathlon dans un décor de montagne sauvage.",
         tags: ["Ski de fond", "Combiné nordique"]
     },
     {
         emoji: "❄️",
         nom: "Livigno",
         couleur: "#F4ECF7",
-        description: "Station de ski d'altitude à 1 800 m, Livigno accueille le snowboard et le ski acrobatique grâce à son snowpark de renommée internationale.",
+        description: "Station de ski d'altitude à 1 800 m, Livigno accueille le snowboard et le ski acrobatique.",
         tags: ["Snowboard", "Ski acrobatique"]
     }
 ];

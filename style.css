@@ -1,3 +1,5 @@
+/* Base */
+
 :root {
     --bleu-nuit: #0B1F3A;
     --bleu-glace: #4A90D9;
@@ -21,6 +23,9 @@ body {
     color: var(--texte);
     min-height: 100vh;
 }
+
+
+/* Navbar */
 
 .navbar {
     background: var(--bleu-nuit);
@@ -68,6 +73,9 @@ body {
     color: var(--or);
 }
 
+
+/* Pied de page */
+
 .site-footer {
     text-align: center;
     padding: 2rem;
@@ -77,6 +85,9 @@ body {
     margin-top: 3rem;
     border-top: 3px solid var(--bleu-glace);
 }
+
+
+/* En-tête */
 
 .page-header {
     color: #fff;
@@ -109,6 +120,9 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/* Catégories */
 
 .section-wrapper {
     max-width: 1100px;
