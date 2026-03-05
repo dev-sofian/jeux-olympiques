@@ -134,11 +134,11 @@ function gererFormulaire() {
         const prenom = document.getElementById("prenom").value.trim();
         const pays = document.getElementById("pays-favori").value;
         if (!prenom || !pays) {
-            alert("Merci de remplir le prénom et le pays favori.");
+            alert("Veuillez indiquer le prénom et le pays favori.");
             return;
         }
         const conf = document.getElementById("confirmation");
-        conf.textContent = `✅ Merci ${prenom} ! Tu mises sur la ${pays} — bonne chance !`;
+        conf.textContent = `Merci ${prenom} ! Tu mises sur la ${pays} — bonne chance !`;
         conf.style.display = "block";
         bouton.disabled = true;
         bouton.style.opacity = ".5";
