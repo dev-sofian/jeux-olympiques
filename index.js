@@ -138,7 +138,7 @@ function gererFormulaire() {
             return;
         }
         const conf = document.getElementById("confirmation");
-        conf.textContent = `Merci ${prenom} ! Tu mises sur la ${pays} — bonne chance !`;
+        conf.textContent = `Merci ${prenom} ! Tu mises sur ${pays} — bonne chance !`;
         conf.style.display = "block";
         bouton.disabled = true;
         bouton.style.opacity = ".5";
