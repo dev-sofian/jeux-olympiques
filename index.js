@@ -1,6 +1,6 @@
 const stats = [
-    { id: "stat-pays", chiffre: "91", label: "Pays participants" },
-    { id: "stat-athletes", chiffre: "2 900", label: "Athlètes attendus" },
+    { id: "stat-pays", chiffre: "92", label: "Pays participants" },
+    { id: "stat-athletes", chiffre: "2 917", label: "Athlètes attendus" },
     { id: "stat-sports", chiffre: "16", label: "Sports au programme" },
     { id: "stat-epreuves", chiffre: "116", label: "Épreuves" },
     { id: "stat-jours", chiffre: "16", label: "Jours de compétition" }
@@ -76,7 +76,10 @@ function afficherFlocons() {
 function afficherStats() {
     stats.forEach(s => {
         const el = document.getElementById(s.id);
-        el.innerHTML = `<span class="stat-chiffre">${s.chiffre}</span><span class="stat-label">${s.label}</span>`;
+        el.innerHTML = `
+        <span class="stat-chiffre">${s.chiffre}</span>
+        <span class="stat-label">${s.label}</span>
+        `;
     });
 }
 

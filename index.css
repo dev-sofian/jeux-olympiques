@@ -265,3 +265,20 @@
     margin-bottom: 2rem;
     font-size: .95rem;
 }
+
+.champ-groupe {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    margin-bottom: 1.2rem;
+}
+
+.confirmation {
+    display: none;
+    margin-top: 1.2rem;
+    background: #1a5c2e;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+}

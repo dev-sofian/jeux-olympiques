@@ -1,12 +1,12 @@
 const pays = [
-    { drapeau: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg", nom: "Norvège", athletes: 110, medailles: 16 },
-    { drapeau: "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg", nom: "Allemagne", athletes: 98, medailles: 12 },
-    { drapeau: "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg", nom: "Autriche", athletes: 85, medailles: 7 },
-    { drapeau: "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg", nom: "États-Unis", athletes: 107, medailles: 8 },
-    { drapeau: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg", nom: "Canada", athletes: 93, medailles: 4 },
-    { drapeau: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg", nom: "France", athletes: 78, medailles: 5 },
-    { drapeau: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg", nom: "Suède", athletes: 80, medailles: 8 },
-    { drapeau: "https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg", nom: "Italie", athletes: 120, medailles: 9 }
+    { drapeau: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg", nom: "Norvège", athletes: 80, medailles: 41 },
+    { drapeau: "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg", nom: "Allemagne", athletes: 189, medailles: 26 },
+    { drapeau: "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg", nom: "Autriche", athletes: 117, medailles: 18 },
+    { drapeau: "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg", nom: "États-Unis", athletes: 235, medailles: 33 },
+    { drapeau: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg", nom: "Canada", athletes: 211, medailles: 21 },
+    { drapeau: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg", nom: "France", athletes: 162, medailles: 23 },
+    { drapeau: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg", nom: "Suède", athletes: 110, medailles: 18 },
+    { drapeau: "https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg", nom: "Italie", athletes: 195, medailles: 30 }
 ];
 
 function afficherPays() {
