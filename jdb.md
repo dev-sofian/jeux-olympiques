@@ -12,7 +12,7 @@
 
 ## Page d'acceuil (index.html, index.css, index.js)
 
-- Sofian a travaillé sur ces fichiers.
+Sofian a travaillé sur ces fichiers.
 
 Le body du fichier est séparé en plusieurs parties:
 
@@ -25,3 +25,12 @@ Le body du fichier est séparé en plusieurs parties:
 - Les section "villes hôtes", "chiffres clés", "calendrier des épreuves" qui se ressemblent beaucoup, qui sont consituées d'un titre avec la classe "section-titre" et d'un contenu qui sont différents, mais la structure reste la même. Ces sections sont affichées grâce aux fonctions afficherVilles();, afficherChiffre(); et afficherCalendrier(); dans le fichier index.js.
 
 - La section "formulaire" comme son nom l'indique consiste en un formulaire pouvant être rempli par le client. Je me suis beaucoup cassé la tête à le faire, je me suis beaucoup inspiré de certains exemples sur internet. 
+
+- La section "footer"
+
+## Les styles (style.css)
+
+Julie et Sofian ont travaillé sur ce fichier.
+
+- La "base" prend en compte trois éléments: :root {} qui définit les couleurs du site; le selecteur universel * {} qui réinitialise la marge et le padding; body {} qui définit les règles de base du corps.
+

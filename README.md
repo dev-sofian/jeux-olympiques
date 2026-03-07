@@ -45,8 +45,8 @@ Ouvrir `index.html` dans un navigateur.
 
 | Objectif | Pourcentage |
 |---|---|
-| Page d'acceuil | 90% |
+| Page d'acceuil | 100% |
 | Page des sports | 20% |
-| Page des pays | 35% |
+| Page des pays | 80% |
 | Styles | 80% |
-| JavaScript | 80% |
+| JavaScript | 90% |
