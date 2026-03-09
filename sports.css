@@ -74,18 +74,32 @@
     flex-wrap: wrap;
     margin-top: 2.5rem;
 }
-.description {
-	width:300;
+
+.wikitable tbody tr {
+    height: 70px;
+}
+
+.wikitable td {
+    padding: 12px;
+    vertical-align: middle;
 }
 
 .cellule-photo {
-    width: 200%;
+    width: 12%;
 }
+
+.cellule-photo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
 .sports-liste {
     display: flex;
     flex-direction: column;
     gap: .7rem;
 }
+
 .sports-item {
     display: flex;
     align-items: center;
