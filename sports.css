@@ -74,19 +74,18 @@
     flex-wrap: wrap;
     margin-top: 2.5rem;
 }
-.description {
-	width:
-}
 
 .cellule-photo {
     width: 400px;
 }
+
 .sports-liste {
     display: flex;
     flex-direction: column;
     gap: .7rem;
-	width: 100%;
+    width: 100%;
 }
+
 .sports-item {
     display: flex;
     align-items: center;
