@@ -28,7 +28,7 @@ jeux-olympiques/
 
 **Accueil** — Présentation générale des JO 2026 : villes hôtes, chiffres clés, calendrier, flocons animés, formulaire de pronostic.
 
-**Sports** — Les 5 sports principaux (ski alpin, biathlon, hockey, snowboard, patinage artistique) avec filtres par catégorie.
+**Sports** — Les 5 sports principaux (ski alpin, biathlon, hockey, snowboard, patinage artistique).
 
 **Pays** — Tableau des délégations.
 
