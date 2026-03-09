@@ -74,22 +74,25 @@
     flex-wrap: wrap;
     margin-top: 2.5rem;
 }
-
-.wikitable tbody tr {
-    height: 70px;
-}
-
-.wikitable td {
-    padding: 12px;
-    vertical-align: middle;
+.description {
+	width:300;
 }
 
 .cellule-photo {
-    width: 12%;
+    width: 200%;
 }
-
-.cellule-photo img {
-    height: 40px;
-    width: auto;
-    object-fit: contain;
+.sports-liste {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+.sports-item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    background: var(--carte);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .05);
+    transition: transform .15s;
 }
