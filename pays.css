@@ -1,5 +1,5 @@
 .hero {
-    background: linear-gradient(160deg, var(--rouge-alpin) 0%, #5c1a1a 60%, #370d0d 100%);
+    background: linear-gradient(160deg, var(--bleu-clair-legerement-gris-avec-une-petite-teinte-de-bleu) 0%, #6e86a8 60%, #3b4c64 100%);
     color: #fff;
     padding: 7rem 2.5rem 6rem;
     text-align: center;
@@ -45,7 +45,7 @@
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--or);
+    color: var(--jaune-soleil-plutot-clair-compare-au-jaune-or);
     margin-bottom: 1rem;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .hero-titre span {
-    color: var(--or);
+    color: var(--jaune-soleil-plutot-clair-compare-au-jaune-or);
 }
 
 .hero-sous-titre {

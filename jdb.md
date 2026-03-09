@@ -22,7 +22,7 @@ Le body du fichier est séparé en plusieurs parties:
 
 - La section "stats-bandeau" qui utilise le tableau "stats" dans index.js afin d'en faire une sorte de bandeau, séparé en flex (dans index.css -> .stats-bandeau) afin d'afficher les statistiques de ces JO.
 
-- Les section "villes hôtes", "chiffres clés", "calendrier des épreuves" qui se ressemblent beaucoup, qui sont consituées d'un titre avec la classe "section-titre" et d'un contenu qui sont différents, mais la structure reste la même. Ces sections sont affichées grâce aux fonctions afficherVilles();, afficherChiffre(); et afficherCalendrier(); dans le fichier index.js.
+- Les section "villes hôtes", "chiffres clés", "calendrier des épreuves" qui se ressemblent beaucoup, qui sont consituées d'un titre avec la classe "section-titre" et d'un contenu qui sont différents, mais la structure reste la même. Ces sections sont affichées grâce aux fonctions afficherVilles();, afficherChiffre(); et afficherCalendrier(); dans le fichier index.js. L'utilisation de la fonction css :hover est particulièrement bien choisie sur les sections "villes hôtes" et "calendrier" afin que la navigation avec le curseur est agréable avec des animations légères. 
 
 - La section "formulaire" comme son nom l'indique consiste en un formulaire pouvant être rempli par le client. Je me suis beaucoup cassé la tête à le faire, je me suis beaucoup inspiré de certains exemples sur internet. 
 
