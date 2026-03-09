@@ -1,5 +1,5 @@
 const sports = [{
-        photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/JO_B_Miller.jpg/500px-JO_B_Miller.jpg️",
+        photo: "https://www.lequipe.fr/_medias/img-photo-jpg/camille-rast-vise-un-premier-succes-en-geant-en-coupe-du-monde-c-pallot-zoom/1500000002351212/0:0,2000:1333-1200-800-75/a4300.jpg",
         nom: "Ski alpin",
         description: "Le ski alpin est un ensemble de disciplines du ski qui se pratiquent dans un contexte de loisirs (ski de piste ou hors-piste) ou de compétition (slalom, slalom géant, super géant, descente et duel). C'est un sport olympique depuis 1936, les premiers championnats du monde remontent à 1931 et la Coupe du monde est née en 1967. Toutes ces compétitions se déroulent sous l'égide de la Fédération internationale de ski. La dénomination « alpin » permet de faire la distinction entre les principales familles de pratique du ski : le ski alpin, le ski de randonnée et le ski nordique. Elle est par ailleurs souvent utilisée pour désigner le ski de piste, qui n'en est qu'une composante. "
     },
@@ -33,12 +33,10 @@ function afficherSports() {
     sports.forEach(e => {
         const item = document.createElement("tr");
         item.innerHTML = `
-            <td class="cellule-photo"><img src="${e.photo}" alt="${e.nom}"></td>
+            <td ><img class="cellule-photo" src= "${e.photo}"></td>
             <td class="cellule-nom">${e.nom}</td>
             <td>
-                <div class="liste-sport">
-                    <span class="athletes-nombre">${e.athletes}</span>
-                </div>
+                <div class="liste-sport"></div>
             </td>
             <td class="description">${e.description}</td>
         `;
