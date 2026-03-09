@@ -1,0 +1,89 @@
+.hero {
+    background: linear-gradient(160deg, var(--bleu-nuit) 0%, #1a3a5c 60%, #0d2137 100%);
+    color: #fff;
+    padding: 5rem 2.5rem 6rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-flocons {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.flocon {
+    position: absolute;
+    color: rgba(255, 255, 255, .4);
+    font-size: 1.2rem;
+    animation: tomber linear infinite;
+}
+
+@keyframes tomber {
+    0% {
+        transform: translateY(-20px) rotate(0deg);
+        opacity: .7;
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.hero-contenu {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-surtitre {
+    font-size: .95rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--or);
+    margin-bottom: 1rem;
+}
+
+.hero-titre {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3.5rem, 9vw, 6rem);
+    letter-spacing: 4px;
+    line-height: 1;
+}
+
+.hero-titre span {
+    color: var(--or);
+}
+
+.hero-sous-titre {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, .7);
+    margin-top: .8rem;
+    letter-spacing: 1px;
+}
+
+.hero-boutons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+}
+.wikitable tbody tr {
+    height: 70px;
+}
+
+.wikitable td {
+    padding: 12px;
+    vertical-align: middle;
+}
+.cellule-photo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
