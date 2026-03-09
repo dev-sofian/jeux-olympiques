@@ -74,6 +74,7 @@
     flex-wrap: wrap;
     margin-top: 2.5rem;
 }
+
 .wikitable tbody tr {
     height: 70px;
 }
@@ -82,6 +83,11 @@
     padding: 12px;
     vertical-align: middle;
 }
+
+.cellule-photo {
+    width: 12%;
+}
+
 .cellule-photo img {
     height: 40px;
     width: auto;
