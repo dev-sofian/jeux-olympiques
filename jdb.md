@@ -34,3 +34,5 @@ Julie et Sofian ont travaillé sur ce fichier.
 
 - La "base" prend en compte trois éléments: :root {} qui définit les couleurs du site; le selecteur universel * {} qui réinitialise la marge et le padding; body {} qui définit les règles de base du corps.
 
+## Page des sports (sports.html, sports.js, sports.css)
+
