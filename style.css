@@ -71,7 +71,7 @@ body {
 }
 
 .navbar-links a:hover,
-.navbar-links a.active {
+.navbar-links a.page-active {
     color: var(--or);
 }
 
