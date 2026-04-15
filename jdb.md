@@ -63,3 +63,5 @@ Le body du fichier est séparé en plusieurs parties:
 -La section "section-wrapper" qui sert à afficher le tableau des pays avec leur drapeau, nom, nombre d’athlètes et nombre de médailles. Il s’agit d’un tableau simple avec un entête les données propres à chaque pays en dessous. Cette section est affichée grâce à afficherPays(); qui elle même utilise, de la même manière que "sports.js", un tableau comportant tout les éléments de afficherPays();. 
 
 -Sofian s’est occupé du css pour cette page.
+
+## Nombre de commits utilisés (jusqu'au 15/04/2026) : 62
