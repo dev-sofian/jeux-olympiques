@@ -34,3 +34,32 @@ Julie et Sofian ont travaillé sur ce fichier.
 
 - La "base" prend en compte trois éléments: :root {} qui définit les couleurs du site; le selecteur universel * {} qui réinitialise la marge et le padding; body {} qui définit les règles de base du corps.
 
+## Page des sports (sports.html, sports.js, sports.css)
+Julie a travaillé sur ces fichiers.
+
+Le body du fichier est séparé en plusieurs parties:
+
+-La section "navbar" qui a déjà été décrite
+
+-la section"hero" qui a déjà été décrite
+
+-La section "section-wrapper" qui est la partie principale de la page. Elle utilise le tableau "sports" dans sports.js pour pouvoir afficher chaque sport avec une photo, le nom et la présentation du sport. Le résultat est satisfaisant et j’ai apprécié faire cette partie plus que pour pays car le final me paraît plus abouti. En revanche, j’ai passé 1 heure à essayer de régler un problème qui n’existait pas car j’avais tout simplement oublier de lier le fichier sports.html et sports.js.
+          
+-Je n’ai pas grand-chose à dire sur sports.css et sports.js car j’ai surtout récupéré ce qui avait été utiliser sur le afficherCalendrier(); en changeant l’emplacement des éléments à l’intérieur et leur contenu puisque je souhaitais utiliser le même format. Ça ma permis de bien comprendre l’intérêt de chaque ligne et les impacts sur le résultat. Ainsi a été créé afficherSports(); qui utilise le tableau « sports » dans le même fichier sports.js contenant la photo, le nom et la description de chaque sport. Le fichier sports.css rend le tout agréable à regarder et donne un résultat propre et fini.
+
+-La section "footer" qui permet d’afficher tout en bas de la page les prénoms des créateurs et le nom du projet. Il est le même pour chaque page.
+
+
+## Page des pays (pays.html, pays.js, pays.css)
+Julie et Sofian ont travaillé sur ces fichiers.
+Le body du fichier est séparé en plusieurs parties:
+
+-La section "navbar" qui a déjà été décrite
+
+-La section "hero" qui a déjà été décrite également
+
+-La section "footer" encore une fois déjà décrite auparavant.
+
+-La section "section-wrapper" qui sert à afficher le tableau des pays avec leur drapeau, nom, nombre d’athlètes et nombre de médailles. Il s’agit d’un tableau simple avec un entête les données propres à chaque pays en dessous. Cette section est affichée grâce à afficherPays(); qui elle même utilise, de la même manière que "sports.js", un tableau comportant tout les éléments de afficherPays();. 
+
+-Sofian s’est occupé du css pour cette page.
