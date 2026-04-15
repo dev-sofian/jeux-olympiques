@@ -2,6 +2,8 @@
 
 Projet de site web réalisé par Julie et Sofian pour un travail en NSI.
 
+![Homme-droit](images/homme-droit.png)
+
 ## Présentation
 
 Ce site présente les Jeux Olympiques d'Hiver 2026 qui se déroulent du **6 au 22 février 2026** à Milan et Cortina d'Ampezzo, en Italie.
